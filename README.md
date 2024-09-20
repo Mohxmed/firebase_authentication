@@ -4,4 +4,4 @@
 - TailwindCSS
 - Firebase
 
-<a href="https://firebase-authent.netlify.app">Live Preview</a>
+<a target="_blank" href="https://firebase-authent.netlify.app">Live Preview</a>
