@@ -1,20 +1,18 @@
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyASeG-xnPCjfSinslCgiq8AxOwRF73ZAII",
-  authDomain: "mohxmeduni-5ac9a.firebaseapp.com",
-  projectId: "mohxmeduni-5ac9a",
-  storageBucket: "mohxmeduni-5ac9a.appspot.com",
-  messagingSenderId: "924156107548",
-  appId: "1:924156107548:web:f543ebf61fc43d2bca78d9",
-  measurementId: "G-CB5X4XKNEY",
+  apiKey: import.meta.env.FIREBASE_API_KEY,
+  authDomain: import.meta.env.FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.FIREBASE_SENDER_ID,
+  appId: import.meta.env.FIREBASE_APP_ID,
+  measurementId: import.meta.env.FIREBASE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
 const auth = getAuth(app);
 
 export { auth };
