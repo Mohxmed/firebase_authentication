@@ -1,4 +1,4 @@
-# Firebase Authentication [ Emain / Password ]
+# Firebase Authentication [ Email / Password ]
 - ReactJS
 - React-router
 - TailwindCSS
